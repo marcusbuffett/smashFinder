@@ -5,6 +5,15 @@
     margin-right: auto;
   }
   .multiple-option {
+    text-align: center;
+    h5 {
+    }
+    .option-container {
+      text-align: left;
+      width: 100px;
+      margin-right: auto;
+      margin-left: auto;
+    }
     label {
       font-size: 20px;
     }
@@ -15,7 +24,6 @@
     text-align: center;
     margin-bottom: 30px;
     h5 {
-      display: inline-block;
       margin: 0 auto;
       margin-bottom: 20px;
     }

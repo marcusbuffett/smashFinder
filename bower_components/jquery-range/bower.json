@@ -1,0 +1,36 @@
+{
+  "name": "jQuery range",
+  "version": "0.96.1",
+  "description": "jQuery range slider",
+  "keywords": [
+    "js"
+  ],
+  "main": [
+    "jquery.range.js",
+    "jquery.range.css"
+  ],
+  "ignore": [
+    "jade/",
+    ".gitignore",
+    "CNAME",
+    "css/",
+    "bower.json",
+    "README.md",
+    "images/",
+    "js/jquery.timeago.js",
+    "js/init.js",
+    "js/prism.js",
+    "res/",
+    "sass/style.scss",
+    "sass/ghpages-materialize.scss",
+    "**/*.html",
+    "**/*.zip",
+    "**/*.txt",
+    "sitemap.xml",
+    "package.json",
+    "Gruntfile.js"
+  ],
+  "dependencies": {
+        "jquery": ">=2.1.1"
+    }
+}
