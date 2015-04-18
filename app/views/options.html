@@ -1,0 +1,49 @@
+<div class="row">
+<div data-ng-repeat="multiOpt in main.options.multiple">
+  <div class="multiple-option option col s12 m4 l12">
+    <div>
+      <h5>{{multiOpt.displayName | uppercase}}</h5>
+    </div>
+    <div data-ng-repeat="subOption in multiOpt.subOptions track by $index">
+      <br>
+      <div data-ng-if="!$last">
+        {{String(subOption.value)}}
+        <input 
+           data-ng-click="main.refilterCharacters()" 
+           data-ng-value="{{subOption.value}}"
+           ng-model='multiOpt.curValue'
+           ng-attr-name="multiOpt.name" 
+           id="{{multiOpt.name + $index}}"
+           type="radio">
+        <label for="{{multiOpt.name + $index}}">
+          {{subOption.displayName}}
+        </label>
+      </div>
+      <div data-ng-if="$last">
+        <input 
+           data-ng-click="main.refilterCharacters()" 
+           data-ng-value="{{subOption.value}}"
+           ng-model='multiOpt.curValue'
+           ng-attr-name="multiOpt.name" 
+           id="{{multiOpt.name + $index}}"
+           type="radio"> 
+        <label for="{{multiOpt.name + $index}}">{{subOption.displayName}}</label>
+      </div>
+    </div>
+  </div>
+  <br>
+</div>
+</div>
+
+
+<div class="row">
+  <div data-ng-repeat="rangeOpt in main.options.range">
+    <div class="range-option option col s12 m12 l12">
+      <h5>{{rangeOpt.displayName | uppercase}}</h5>
+      <br>
+      <input type="hidden" class="range-slider" data-slider="rangeOpt">
+    </div>
+  </div>
+  <br>
+</div>
+</div>

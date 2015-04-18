@@ -1,0 +1,33 @@
+.char-container {
+
+  //Col
+  div > div {
+    height: 150px;
+    margin-bottom: 20px;
+    //Nested div
+    div {
+      height: 100%;
+      /*background-color: black;*/
+      position: relative;
+      img {
+        display: inline-block;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        max-width:80%;
+        max-height:80%;
+      }
+    }
+  }
+  h3 {
+    font-size: 20px;
+    background-color: red;
+  }
+  .character-leave {
+    animation: fadeOut 1s;
+  }
+
+}
