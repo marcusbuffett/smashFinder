@@ -29,6 +29,7 @@
   background: white;
   white-space: nowrap;
   line-height: 1;
+  display: none;
 }
 .slider-container .back-bar .focused {
   z-index: 10;
@@ -86,6 +87,7 @@
 }
 .theme-green .back-bar .pointer-label {
   color: #999;
+  display: none;
 }
 .theme-green .back-bar .focused {
   color: #333;
@@ -119,6 +121,7 @@
 }
 .theme-blue .back-bar .pointer-label {
   color: #999;
+  display: none;
 }
 .theme-blue .back-bar .focused {
   color: #333;

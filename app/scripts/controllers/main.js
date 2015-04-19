@@ -49,7 +49,7 @@ angular.module('smashFinderApp')
       console.log('this is being called');
       console.log(filterCharacters());
       this.refilterCharacters();
-      $scope.$apply()
+      $scope.$apply();
     }.bind(this);
   }.bind(this));
   this.refilterCharacters = function () {

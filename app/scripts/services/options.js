@@ -67,6 +67,13 @@ angular.module('smashFinderApp')
     curHigh: max,
   });
   allOptions.push({
+    displayName: 'Weight',
+    name: 'weight',
+    type: 'range',
+    curLow: 1,
+    curHigh: max,
+  });
+  allOptions.push({
     displayName: 'Rank',
     name: 'rank',
     type: 'range',
