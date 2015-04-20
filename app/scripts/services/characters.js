@@ -44,7 +44,7 @@ angular.module('smashFinderApp')
       character('Greninja'        , 4  , 6  , 3  , 27 , 22 , true  , false , true )   ,
       character('Ike'             , 41 , 30 , 12 , 8  , 42 , false , false , true )   ,
       character('Jigglypuff'      , 48 , 47 , 4  , 49 , 36 , false , false , false)   ,
-      character('Kirby'           , 36 , 31 , 47 , 46 , 40 , false , false , false)   ,
+      character('Kirby'           , 36 , 31 , 47 , 46 , 40 , true , false , false)   ,
       character('Link'            , 17 , 41 , 27 , 11 , 34 , true  , false , false)   ,
       character('Little Mac'      , 8  , 3  , 20 , 39 , 30 , false , false , true )   ,
       character('Lucario'         , 33 , 34 , 24 , 16 , 21  , true  , false , true )   ,
