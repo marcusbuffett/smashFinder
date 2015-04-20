@@ -68,7 +68,7 @@ angular.module('smashFinderApp')
       character('Samus'           , 30 , 29 , 36 , 7  , 44 , true  , false , false)   ,
       character('Sheik'           , 5  , 7  , 11 , 37 , 2  , true  , false , false)   ,
       character('Shulk'           , 26 , 28 , 17 , 15 , 31 , false , false , true )   ,
-      character('Sonic'           , 7  , 1  , 7  , 26 , 4  , false , false , false)   ,
+      character('Sonic'           , 7  , 1  , 7  , 26 , 4  , true , false , false)   ,
       character('Toon Link'       , 13 , 17 , 37 , 30 , 24 , true  , false , false)   ,
       character('Villager'        , 32 , 45 , 34 , 20 , 23 , true  , true  , false)   ,
       character('Wario'           , 46 , 33 , 2  , 9  , 6 , true  , false , false)   ,
