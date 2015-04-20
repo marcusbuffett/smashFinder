@@ -51,7 +51,7 @@ angular.module('smashFinderApp')
       character('Lucina'          , 1  , 15 , 19 , 33 , 48 , false , false , true )   ,
       character('Luigi'           , 27 , 32 , 48 , 19 , 14 , true  , false , false)   ,
       character('Mario'           , 25 , 24 , 8  , 18 , 12 , true  , true  , false)   ,
-      character('Marth'           , 2  , 16 , 23 , 33 , 37 , false , false , true )   ,
+      character('Marth'           , 2  , 16 , 23 , 33 , 47 , false , false , true )   ,
       character('Mega Man'        , 28 , 38 , 9  , 14 , 16 , true  , false , false)   ,
       character('Meta Knight'     , 18 , 9  , 21 , 41 , 26 , false , false , false)   ,
       character('Mewtwo'          , 49 , 49 , 49 , 48 , 49 , true  , true  , false)   ,
