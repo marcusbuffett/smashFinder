@@ -9,7 +9,7 @@
  */
 angular.module('smashFinderApp')
 .service('$options', function () {
-  var max = 48;
+  var max = 49;
   var allOptions = [];
   allOptions.push({
     displayName: 'Projectile',

@@ -39,7 +39,7 @@
  * OF THE POSSIBILITY OF SUCH DAMAGE.
  *
 */
-
+/* jshint ignore:start */
 // t: current time, b: begInnIng value, c: change In value, d: duration
 jQuery.easing['jswing'] = jQuery.easing['swing'];
 
@@ -6021,3 +6021,4 @@ Picker.extend( 'pickadate', DatePicker )
   });
 
 }( jQuery ));
+/* jshint ignore:end */
