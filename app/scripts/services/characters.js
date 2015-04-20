@@ -56,7 +56,7 @@ angular.module('smashFinderApp')
       character('Meta Knight'     , 18 , 9  , 21 , 41 , 26 , false , false , false)   ,
       character('Mewtwo'          , 49 , 49 , 49 , 48 , 49 , true  , true  , false)   ,
       character('Ness'            , 42 , 36 , 33 , 27 , 10  , true  , true  , false)   ,
-      character('Olimar'          , 38 , 37 , 46 , 42 , 25 , false , false , false)   ,
+      character('Olimar'          , 38 , 37 , 46 , 42 , 25 , true , false , false)   ,
       character('Pac-Man'         , 31 , 27 , 22 , 24 , 16 , true  , false , false)   ,
       character('Palutena'        , 14 , 10 , 41 , 32 , 32 , true  , true  , true )   ,
       character('Peach'           , 43 , 40 , 38 , 35 , 27 , true  , false , true )   ,
