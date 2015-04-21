@@ -84,16 +84,17 @@ angular.module('smashFinderApp')
       imgName =  imgName + '.png';
       char.image = imgName;
     });
-    this.walkSpeedRankings = [
+
+    var walkSpeedRankings = [
       'Lucina',
       'Marth',
       'Fox',
       'Greninja',
       'Sheik',
-      'Zero Suit Samus',
+      'Zerosuit Samus',
       'Sonic',
       'Little Mac',
-      'DK',
+      'Donkey Kong',
       'Falco',
       'Diddy Kong',
       'Pikachu',
@@ -107,7 +108,7 @@ angular.module('smashFinderApp')
       'Wii Fit Trainer',
       'Duck Hunt Dog',
       'Yoshi',
-      'ROB',
+      'Rob',
       'Game and Watch',
       'Mario',
       'Shulk',
@@ -116,7 +117,7 @@ angular.module('smashFinderApp')
       'Mega Man',
       'Samus',
       'Villager',
-      'Pac',
+      'Pac-Man',
       'Lucario',
       'Dedede',
       'Captain Falcon',
@@ -132,7 +133,192 @@ angular.module('smashFinderApp')
       'Zelda',
       'Wario',
       'Ganondorf',
-      'Jigglypuff'
-      ];
+      'Jigglypuff',
+      'Mewtwo',
+    ];
+
+    var airSpeedRankings = [
+      'Yoshi',
+      'Jigglypuff',
+      'Wario',
+      'Zerosuit Samus',
+      'Greninja',
+      'Donkey Kong',
+      'Dr. Mario',
+      'Mario',
+      'Sonic',
+      'Game and Watch',
+      'Captain Falcon',
+      'Duck Hunt Dog',
+      'Mega Man',
+      'Sheik',
+      'Bowser Jr.',
+      'Ike',
+      'Rob',
+      'Shulk',
+      'Pac-Man',
+      'Zelda',
+      'Lucina',
+      'Marth',
+      'Lucario',
+      'Little Mac',
+      'Robin',
+      'Rosalina',
+      'Meta Knight',
+      'Bowser',
+      'Wii Fit Trainer',
+      'Fox',
+      'Ness',
+      'Peach',
+      'Samus',
+      'Toon Link',
+      'Villager',
+      'Pikachu',
+      'Palutena',
+      'Falco',
+      'Dark Pit',
+      'Pit',
+      'Diddy Kong',
+      'Link',
+      'Charizard',
+      'Olimar',
+      'Kirby',
+      'Ganondorf',
+      'Luigi',
+      'Dedede',
+      'Mewtwo',
+    ];
+
+    var weightRankings = [
+      'Bowser',
+      'Donkey Kong',
+      'Dedede',
+      'Charizard',
+      'Ganondorf',
+      'Bowser Jr.',
+      'Samus',
+      'Ike',
+      'Wario',
+      'Rob',
+      'Captain Falcon',
+      'Link',
+      'Yoshi',
+      'Shulk',
+      'Mega Man',
+      'Lucario',
+      'Dr. Mario',
+      'Mario',
+      'Villager',
+      'Luigi',
+      'Wii Fit Trainer',
+      'Dark Pit',
+      'Pit',
+      'Robin',
+      'Sonic',
+      'Pac-Man',
+      'Greninja',
+      'Ness',
+      'Toon Link',
+      'Diddy Kong',
+      'Palutena',
+      'Duck Hunt Dog',
+      'Lucina',
+      'Marth',
+      'Peach',
+      'Zelda',
+      'Sheik',
+      'Little Mac',
+      'Falco',
+      'Zerosuit Samus',
+      'Meta Knight',
+      'Fox',
+      'Olimar',
+      'Pikachu',
+      'Rosalina',
+      'Kirby',
+      'Game and Watch',
+      'Mewtwo',
+      'Jigglypuff',
+    ];
+
+    var tierList = [
+      'Diddy Kong',
+      'Sheik',
+      'Yoshi',
+      'Sonic',
+      'Rosalina',
+      'Wario',
+      'Villager',
+      'Zerosuit Samus',
+      'Fox',
+      'Ness',
+      'Captain Falcon',
+      'Mario',
+      'Pikachu',
+      'Luigi',
+      'Rob',
+      'Mega Man',
+      'Pac-Man',
+      'Pit',
+      'Duck Hunt Dog',
+      'Pit',
+      'Lucario',
+      'Greninja',
+      'Dedede',
+      'Toon Link',
+      'Olimar',
+      'Meta Knight',
+      'Peach',
+      'Bowser',
+      'Bowser Jr.',
+      'Little Mac',
+      'Shulk',
+      'Palutena',
+      'Game and Watch',
+      'Link',
+      'Dr. Mario',
+      'Jigglypuff',
+      'Robin',
+      'Falco',
+      'Donkey Kong',
+      'Kirby',
+      'Wii Fit Trainer',
+      'Ike',
+      'Ganondorf',
+      'Samus',
+      'Zelda',
+      'Charizard',
+      'Marth',
+      'Lucina',
+    ];
+
+    function characterByName(characters, name) {
+      var character = null;
+      characters.forEach(function (char) {
+        if (char.name === name) {
+          character = char;
+        }
+      });
+      return character;
+    }
+    walkSpeedRankings.forEach(function(charName, index) {
+      var character = characterByName(this.characters, charName);
+      character.walkSpeed = index + 1;
+    }.bind(this));
+
+    airSpeedRankings.forEach(function(charName, index) {
+      var character = characterByName(this.characters, charName);
+      character.airSpeed = index + 1;
+    }.bind(this));
+
+    weightRankings.forEach(function(charName, index) {
+      var character = characterByName(this.characters, charName);
+      character.weight = index + 1;
+    }.bind(this));
+
+    tierList.forEach(function(charName, index) {
+      var character = characterByName(this.characters, charName);
+      character.rank = index + 1;
+    }.bind(this));
 
   });
