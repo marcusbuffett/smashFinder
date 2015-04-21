@@ -314,7 +314,7 @@ angular.module('smashFinderApp')
       'Pac-Man',
       'Pit',
       'Duck Hunt Dog',
-      'Pit',
+      'Dark Pit',
       'Lucario',
       'Greninja',
       'Dedede',
