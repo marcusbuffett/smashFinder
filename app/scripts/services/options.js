@@ -74,6 +74,13 @@ angular.module('smashFinderApp')
     curHigh: max,
   });
   allOptions.push({
+    displayName: 'Fall Speed',
+    name: 'fallSpeed',
+    type: 'range',
+    curLow: 1,
+    curHigh: max,
+  });
+  allOptions.push({
     displayName: 'Rank',
     name: 'rank',
     type: 'range',
